@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <h3 class="header-title">Time Tours</h3>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="buy.html">Buy</a>
+            <a href="about.html">About us</a>
+        </nav>
+
+
+    </header>
+
+    <main class="formcontainer">
+        <h3 class="title">Tour Reservations Form</h3>
+        <img src="images/booking.png" alt="">
+        <form>
+            <label>Nama Penerima</label>
+            <input type="text">
+            <label>Alamat</label>
+            <input type="email">
+            <label>Phone Number</label>
+            <input type="number">
+            <label>Pick a Date</label>
+            <input type="date">
+            <label>How many Cookies?</label>
+            <input id="num-of-people" type="number">
+            <label>Cookies</label>
+            <select name="package" id="package">
+                <option value="30.000">Dark Cookies | 30000</option>
+                <option value="30.000">Choco Chip Cookies | 30000</option>
+                <option value="40.000">Peanut Butter Cookies | 40000</option>
+                <option value="25.000">Cheese Cookies | 25000</option>
+                <option value="35.000">Matcha Cookies 35000</option>
+            </select>
+            <h4>Total Payment : $ <span id="total"> </span></h4>
+            <button onclick="process()" type="Button"> Process Buying</button>
+        </form>
+    </main>
+
+    <footer>
+        <h4>Time Tours</h4>
+        <p>Copyright &copy 2022 Designed by Sofia ma'ruf </p>
+    </footer>
+    <script src="script.js"> </script>
+</body>
+
+</html>
